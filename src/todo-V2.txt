@@ -1,0 +1,15 @@
+update sytle CSS File
+
+by chatgpt help 
+
+1. ARIA Labels and Accessibility:
+
+ARIA (Accessible Rich Internet Applications) labels are attributes used to improve accessibility by providing additional information for screen readers and other assistive technologies. These labels are essential for users who rely on these technologies to understand the purpose of interactive elements on the web.
+
+In your Todo App, you can use aria-labels to describe the function of buttons and other interactive elements, making your app more accessible to users with disabilities.
+
+2. Optimization:
+The handleSubmit function could be refactored for better readability. For example:
+
+3. Improving deleteAllCompleted:
+Since you're checking if there are any completed todos, you don't need to check todos.length separately. Here’s a streamlined version:
