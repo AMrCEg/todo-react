@@ -167,26 +167,28 @@ const App = () => {
         ))}
       </div>
 
-      <div className="show-btns">
-        <button
-          className={`btn-55 ${todoShow === "all" && "active"}`}
-          onClick={() => setTodoShow("all")}
-        >
-          <span>Show All</span>
-        </button>
-        <button
-          className={`btn-55 ${todoShow === "uncomplete" && "active"}`}
-          onClick={() => setTodoShow("uncomplete")}
-        >
-          <span>Show unCompleted</span>
-        </button>
-        <button
-          className={`btn-55 ${todoShow === "complete" && "active"}`}
-          onClick={() => setTodoShow("complete")}
-        >
-          <span>Show Completed</span>
-        </button>
-      </div>
+      {todos.length > 0 && (
+        <div className="show-btns">
+          <button
+            className={`btn-55 ${todoShow === "all" && "active"}`}
+            onClick={() => setTodoShow("all")}
+          >
+            <span>Show All</span>
+          </button>
+          <button
+            className={`btn-55 ${todoShow === "uncomplete" && "active"}`}
+            onClick={() => setTodoShow("uncomplete")}
+          >
+            <span>Show unCompleted</span>
+          </button>
+          <button
+            className={`btn-55 ${todoShow === "complete" && "active"}`}
+            onClick={() => setTodoShow("complete")}
+          >
+            <span>Show Completed</span>
+          </button>
+        </div>
+      )}
 
       <div className="all-btns">
         {todos.length > 0 && (
